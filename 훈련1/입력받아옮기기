@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class 입력받아옮기기 {
+    static int[] card = {3, 5, 1, 9, 7};
+    static char[] t = new char[4];
+
+    public static void moveR(){
+        int temp = card[4];
+        for(int i = 4; i >= 1; i--){
+            card[i] = card[i - 1];
+        }
+        card[0] = temp;
+    }
+
+    public static void moveL(){
+        int temp = card[0];
+        for(int i = 0; i <= 3; i++){
+            card[i] = card[i + 1];
+        }
+        card[4] = temp;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        for(int i = 0; i < 4; i++){
+            t[i] = sc.next().charAt(0);
+        }
+
+        for(int i = 0; i < 4; i++){
+            if(t[i] == 'R'){
+                moveR();
+            }else if(t[i] == 'L'){
+                moveL();
+            }
+        }
+        for(int i = 0; i < 5; i++){
+            System.out.print(card[i] + " ");
+        }
+        
+   

@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class 특정문자뺴고조합 {
+    static char[] name = {'E', 'W', 'A', 'B', 'C'};
+    static char[] path = new char[5];
+    static int[] used = new int[10];
+    static char t;
+
+    public static void run(int lev){
+        if(lev == 4){
+            System.out.println(new String(path).trim());
+            return;
+        }
+
+        for(int i = 0; i< 5; i++){
+            if(used[i] == 1) continue;
+            if(name[i] == t) continue;
+            path[lev] = name[i];
+            used[i] = 1;
+            run(lev + 1);
+            path[lev] = 0;
+            used[i] = 0;
+        }
+    }
+
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        t = sc.next().charAt(0);
+        run(0);
+        sc.close();
+    }
+
+}
