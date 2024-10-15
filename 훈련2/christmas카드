@@ -1,0 +1,46 @@
+import java.util.*;
+public class christmas카드만들기 {
+    static String[] card;
+    static String[] path = new String[4];
+    static int[] used = new int[100];
+    static int n;
+    static int cnt;
+
+    public static void run(int lev){
+        if(lev == 4){
+            String buf = new String();
+            for(int i = 0; i < 4; i++){
+                buf += path[i];
+            }
+            if(buf.equals("CHRISTMAS")){
+                cnt++;
+            }
+
+            return;
+        }
+
+        for(int i = 0; i< n; i++){
+            if(used[i] == 1) continue;
+            path[lev] = card[i];
+            used[i]++;
+
+            run(lev + 1);
+            
+            path[lev] = "";
+            used[i] = 0;
+        }
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        card = new String[n];
+        for(int i = 0; i < n; i++){
+            card[i] = sc.next();
+        }
+        run(0);
+        
+        System.out.println(cnt);
+        sc.close();
+    }//main./
+}

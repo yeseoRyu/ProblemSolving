@@ -1,0 +1,31 @@
+import java.util.*;
+public class 화학물질 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String mas = new String();
+        double passcnt = 0;
+        double failcnt = 0;
+        
+        mas = sc.next();
+
+        int a = -1;
+        String cmp = mas.toUpperCase();
+        while(true){
+            a = cmp.indexOf("PASS", a + 1);
+            if(a == -1) break;
+            passcnt++;
+        }
+
+        int b = -1;
+        while(true){
+            b = cmp.indexOf("FAIL", b + 1);
+            if(b == -1) break;
+            failcnt++;
+        }
+
+        double result = passcnt/(passcnt + failcnt);
+        double r = result*100;
+        System.out.println((int)r + "%");
+        sc.close();
+    }//main./
+}
