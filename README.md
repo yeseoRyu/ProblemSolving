@@ -1,5 +1,5 @@
-## Problem Soving 공부기록
-> Coding Test for Java 문제풀이 모음집
+## Problem Soving
+> 알고리즘 공부 & CT 문제풀이 모음
 
 ## 1. 훈련1
 <h4>[문제 유형]</h4>
