@@ -1,4 +1,3 @@
-package STL;
 
 public class 다중sort1{
     static int[] map = {1, 5, 4, 2, 6, 9, 7};
