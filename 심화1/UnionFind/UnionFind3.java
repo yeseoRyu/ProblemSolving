@@ -1,7 +1,7 @@
 package UnionFind;
 
 public class UnionFind3 {
-    /* 그룹 개수 출력 */
+    /* 응용 2) 그룹 개수 */
     static int[] boss = new int[10];
     static int[] isNew = new int[10];
     static int perCount = 0; // 등장인물 수

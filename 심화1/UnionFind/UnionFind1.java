@@ -1,7 +1,7 @@
 package UnionFind;
 
 public class UnionFind1 {
-
+    /* <Union-Find> 기본 개념 */
     static int[] boss = new int[10];
 
     // n의 보스 찾기

@@ -1,7 +1,7 @@
 package UnionFind;
 
 public class UnionFind2 {
-    /* 1, 2, 9번이 소속된 사람 수 출력 */
+    /* 응용1) 그룹에 소속된 멤버 수 구하기 */
 
     static int[] boss = new int[10];
     static int[] group = new int[10];
@@ -44,9 +44,10 @@ public class UnionFind2 {
             group[i] = 1;
         }
 
+        // 1, 2, 9 가 속한 그룹의 멤버수 출력
         System.out.println(getCount(1));
         System.out.println(getCount(2));
         System.out.println(getCount(9));
     }
-    
+
 }
