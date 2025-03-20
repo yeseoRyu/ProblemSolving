@@ -1,4 +1,3 @@
-package String_Parsing;
 public class 단어파싱 {
     public static void main(String[] args) {
         String input = "HOT_FRIED____CHICKEN_KFC_IS_BEST";

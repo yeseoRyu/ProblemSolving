@@ -1,5 +1,3 @@
-package String_Parsing;
-
 import java.util.Scanner;
 
 public class 금지어수정 {

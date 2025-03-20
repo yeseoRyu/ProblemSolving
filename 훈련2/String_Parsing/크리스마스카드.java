@@ -1,5 +1,3 @@
-package String_Parsing;
-
 import java.util.Scanner;
 
 public class 크리스마스카드 {
