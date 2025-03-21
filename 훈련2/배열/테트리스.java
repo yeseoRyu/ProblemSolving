@@ -1,3 +1,4 @@
+package 배열;
 import java.util.*;
 public class 테트리스 {
     static int[][] map = new int[5][4];

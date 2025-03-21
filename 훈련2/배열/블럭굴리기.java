@@ -1,3 +1,4 @@
+package 배열;
 import java.util.*;
 public class 블럭굴리기 {
     static int[][] map = {{0, 5, 4}, {3, 0, 0}, {0, 0, 1}};

@@ -1,4 +1,4 @@
-package 재귀;
+package BackTracking;
 
 import java.util.Scanner;
 

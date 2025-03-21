@@ -1,3 +1,5 @@
+package UnionFind;
+
 import java.util.Scanner;
 
 public class 그룹핑 {

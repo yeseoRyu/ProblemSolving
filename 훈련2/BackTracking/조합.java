@@ -1,5 +1,7 @@
-package 재귀;
-import java.util.*;
+package BackTracking;
+
+import java.util.Scanner;
+
 public class 조합 {
     static int[] input = new int[5];
     static int[] used = new int[5];

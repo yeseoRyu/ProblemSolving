@@ -1,4 +1,4 @@
-package 재귀;
+package BackTracking;
 import java.util.*;
 public class 재귀탐색{
     static String[] name = new String[3];

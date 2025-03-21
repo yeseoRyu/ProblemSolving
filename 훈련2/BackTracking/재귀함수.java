@@ -1,4 +1,4 @@
-package 재귀;
+package BackTracking;
 import java.util.*;
 public class 재귀함수 {
     static char[] card = {'O', 'X'};

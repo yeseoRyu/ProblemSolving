@@ -1,35 +1,28 @@
-import java.util.*;
-public class 가장작은영역{
-    
-    static int getSum(int[] arr){
+public class 가장작은영역 {
+    /*
+     * 연속되어 있는 4칸의 합을 구할 때,
+     * 가장 작은 값이 몇인지 출력
+     */
+
+    public static void main(String[] args) {
+        int[] input = { 7, 2, 4, 3, 2, 1, 1, 9, 2 };
+        int limit = input.length - 4;
+        int min = 99;
         int sum = 0;
-        for(int i = 0; i < 4; i++){
-            sum += arr[i];
+
+        for (int i = 0; i < 4; i++) {
+            sum += input[i];
         }
-        return sum;
-    }
 
-    public static void main(String[] arg){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-
-        for(int i = 0; i < n; i++){
-            arr[i] = sc.nextInt();
-        }
-        int sum = getSum(arr);
-        int min = 999;
-
-        int limit = n - 4;
-        for(int i = 0; i <= limit; i++){
-            if(sum < min) min = sum;
-
-            if(i == limit) break;
-
-            sum -= arr[i];
-            sum += arr[i + 4];
+        for (int i = 0; i < limit; i++) {
+            if (min > sum) {
+                min = sum;
+            }
+            sum -= input[i];
+            sum += input[i + 4];
         }
 
         System.out.println(min);
-    }// ./main()
+    }
+
 }

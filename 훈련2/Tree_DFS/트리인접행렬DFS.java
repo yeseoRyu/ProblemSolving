@@ -1,3 +1,4 @@
+package Tree_DFS;
 import java.util.*;
 public class 트리인접행렬DFS{
     static int[][] map = new int[6][6];
