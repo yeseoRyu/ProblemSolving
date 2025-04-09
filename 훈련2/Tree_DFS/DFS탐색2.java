@@ -32,6 +32,7 @@ public class DFS탐색2 {
     }
 
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args){
         ArrayList t1 = new ArrayList<>();
         t1.add(new Node(1,5));
